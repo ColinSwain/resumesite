@@ -18,14 +18,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Pages\Assets\" />
     <None Remove="Pages\Assets\Screen Recording 2024-04-24 at 9.41.42 AM.mov" />
-    <None Remove="Pages\Assets\BugWorld.mov" />
+    <None Remove="Pages\assets\BugWorld.mp4" />
+    <None Remove="Pages\assets\Resume.pdf" />
+    <None Remove="Pages\assets\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\Assets\" />
+    <Folder Include="Pages\assets\" />
+    <Folder Include="wwwroot\assets\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Pages\Assets\BugWorld.mov" />
+    <Content Remove="wwwroot\assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\assets\BugWorld.mp4" />
+    <Content Include="Pages\assets\Resume.pdf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 </Project>
