@@ -1,4 +1,4 @@
-#overtable table {
+table {
     width: 100%;
     border: 1px black;
     border-collapse: collapse;
@@ -9,12 +9,12 @@
 
 th, td {
     padding: 12px 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #3db095;
 }
 
 th {
-    background-color: #3498db;
-    color: #ffffff;
+    background-color: #8cebd8;
+    color: #054147;
 }
 
 tr:nth-child(even) {
